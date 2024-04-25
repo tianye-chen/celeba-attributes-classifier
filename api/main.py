@@ -29,7 +29,7 @@ model.classifier[-1] = nn.Linear(model.classifier[-1].in_features, NUM_CLASSES)
 model.classifier.append(nn.Sigmoid())
 
 model_path = os.path.join(os.path.dirname(__file__), 'demo_model.h5')
-model.load_state_dict(model_path, map_location=device)
+model.load_state_dict(torch.load(model_path, map_location=device))
 
 transform = transforms.Compose([
     transforms.Resize((IMAGE_DIM, IMAGE_DIM)),
