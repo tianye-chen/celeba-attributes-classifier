@@ -1,7 +1,3 @@
-!pip install flask
-!pip install flask-cors
-!pip3 install torch torchvision --index-url https://download.pytorch.org/whl/cu118
-
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import torch
