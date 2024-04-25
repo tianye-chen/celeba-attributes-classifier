@@ -1,3 +1,6 @@
+from demo_app.api.packages import install_packages
+install_packages()
+
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import torch
