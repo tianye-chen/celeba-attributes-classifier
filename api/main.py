@@ -1,4 +1,4 @@
-from demo_app.api.packages import install_packages
+from packages import install_packages
 install_packages()
 
 from flask import Flask, request, jsonify
