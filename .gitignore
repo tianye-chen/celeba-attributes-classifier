@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+/functions/venv
 /.pnp
 .pnp.js
 

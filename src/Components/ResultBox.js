@@ -4,7 +4,7 @@ export const ResultBox = ({ results }) => {
       <p class="text-4xl text-white">
         {results
           ? results.map((result, idx) => (
-              <span class="text-xl">
+              <span class="text-xl" key={idx}>
                 {result}
                 {idx < results.length - 1 ? ", " : ""}
               </span>

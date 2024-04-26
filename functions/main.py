@@ -1,4 +1,5 @@
-from flask import Flask, request, jsonify
+from firebase_functions import https_fn, options
+from flask import jsonify
 from flask_cors import CORS
 import torch
 from torch import nn
@@ -19,9 +20,6 @@ ATTRIBUTES = ['5_o_Clock_Shadow', 'Arched_Eyebrows', 'Attractive', 'Bags_Under_E
        'Rosy_Cheeks', 'Sideburns', 'Smiling', 'Straight_Hair', 'Wavy_Hair',
        'Wearing_Earrings', 'Wearing_Hat', 'Wearing_Lipstick',
        'Wearing_Necklace', 'Wearing_Necktie', 'Young']
-
-app = Flask(__name__)
-cors = CORS(app)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = efficientnet_b0(weights=None)
@@ -61,19 +59,14 @@ def predict(image):
     
     return get_present_attrs(preds)
 
-@app.route('/make_preds', methods=['POST'])
-def make_preds():
-    file = request.files['image_file']
-
+@https_fn.on_request(cors=options.CorsOptions(cors_origins="*", cors_methods=["get, post"]))
+def make_preds(req):
+    file = req.files['image_file']
+    
     if file:
       image = Image.open(file.stream)
       results = predict(image)
       
-      print("hi")
-      results = jsonify(results)
+      print(f'{jsonify(results)}\n')
       
-      print(results)
-      return results
-
-if __name__ == '__main__':
-  app.run(host='0.0.0.0', port=5000, debug=False)
+      return jsonify(results)

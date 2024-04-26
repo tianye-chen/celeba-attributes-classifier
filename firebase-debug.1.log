@@ -1,0 +1,192 @@
+[debug] [2024-04-26T04:44:52.343Z] ----------------------------------------------------------------------
+[debug] [2024-04-26T04:44:52.345Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2024-04-26T04:44:52.346Z] CLI Version:   13.7.4
+[debug] [2024-04-26T04:44:52.346Z] Platform:      win32
+[debug] [2024-04-26T04:44:52.346Z] Node Version:  v20.5.0
+[debug] [2024-04-26T04:44:52.346Z] Time:          Fri Apr 26 2024 00:44:52 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-04-26T04:44:52.346Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-04-26T04:44:52.412Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-04-26T04:44:52.413Z] > authorizing via signed-in user (tianyecf@gmail.com)
+[info] i  emulators: Starting emulators: functions, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, hosting"}}
+[debug] [2024-04-26T04:44:52.426Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-26T04:44:52.427Z] [hosting] Hosting Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-26T04:44:52.427Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2024-04-26T04:44:52.437Z] [hub] writing locator at C:\Users\tiany\AppData\Local\Temp\hub-celeba-classifier.json
+[debug] [2024-04-26T04:44:52.453Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-26T04:44:52.453Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-04-26T04:44:52.453Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"hosting":[{"address":"127.0.0.1","family":"IPv4","port":5000}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, pubsub, storage\u001b[22m"}}
+[debug] [2024-04-26T04:44:52.455Z] defaultcredentials: writing to file C:\Users\tiany\AppData\Roaming\firebase\tianyecf_gmail_com_application_default_credentials.json
+[debug] [2024-04-26T04:44:52.457Z] Setting GAC to C:\Users\tiany\AppData\Roaming\firebase\tianyecf_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\tiany\\AppData\\Roaming\\firebase\\tianyecf_gmail_com_application_default_credentials.json"}}
+[debug] [2024-04-26T04:44:52.459Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/celeba-classifier/adminSdkConfig [none]
+[debug] [2024-04-26T04:44:52.870Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/celeba-classifier/adminSdkConfig 200
+[debug] [2024-04-26T04:44:52.870Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/celeba-classifier/adminSdkConfig {"projectId":"celeba-classifier","storageBucket":"celeba-classifier.appspot.com"}
+[debug] [2024-04-26T04:44:52.879Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/celeba-classifier/sites 
+[debug] [2024-04-26T04:44:53.352Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/celeba-classifier/sites 200
+[debug] [2024-04-26T04:44:53.352Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/celeba-classifier/sites {"sites":[{"name":"projects/celeba-classifier/sites/celeba-classifier","defaultUrl":"https://celeba-classifier.web.app","type":"DEFAULT_SITE"}]}
+[debug] [2024-04-26T04:44:53.352Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/celeba-classifier/webApps/-/config [none]
+[debug] [2024-04-26T04:44:53.735Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/celeba-classifier/webApps/-/config 200
+[debug] [2024-04-26T04:44:53.736Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/celeba-classifier/webApps/-/config {"projectId":"celeba-classifier","storageBucket":"celeba-classifier.appspot.com","apiKey":"AIzaSyA3iOK9KDycAfIzwxvR0KY4DSPi0tNKkr0","authDomain":"celeba-classifier.firebaseapp.com","messagingSenderId":"177805638041"}
+[debug] [2024-04-26T04:44:53.740Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/celeba-classifier [none]
+[debug] [2024-04-26T04:44:54.035Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/celeba-classifier 200
+[debug] [2024-04-26T04:44:54.035Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/celeba-classifier {"projectId":"celeba-classifier","projectNumber":"177805638041","displayName":"CelebA Classifier","name":"projects/celeba-classifier","resources":{"hostingSite":"celeba-classifier"},"state":"ACTIVE","etag":"1_10816cac-265c-4e57-887a-efb9868b8d7f"}
+[info] i  hosting[celeba-classifier]: Serving hosting files from: ./build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1m./build\u001b[22m"}}
+[info] +  hosting[celeba-classifier]: Local server: http://127.0.0.1:5000 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://127.0.0.1:5000\u001b[22m\u001b[24m"}}
+[debug] [2024-04-26T04:44:54.051Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2024-04-26T04:44:54.052Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2024-04-26T04:44:54.052Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\tiany\\.cache\\firebase\\emulators\\ui-v1.11.8\\server\\server.mjs"],"optionalArgs":[],"joinArgs":false,"shell":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\tiany\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.8\\\\server\\\\server.mjs\"],\"optionalArgs\":[],\"joinArgs\":false,\"shell\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2024-04-26T04:44:54.185Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2024-04-26T04:44:54.185Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\tiany\Desktop\Work\Dev\UB CLASS\SPRING 2024\Deep learning\code_demo\demo_app\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\tiany\\Desktop\\Work\\Dev\\UB CLASS\\SPRING 2024\\Deep learning\\code_demo\\demo_app\\functions\" for Cloud Functions..."}}
+[debug] [2024-04-26T04:44:54.325Z] Customer code is not Node
+[debug] [2024-04-26T04:44:54.325Z] Validating python source
+[debug] [2024-04-26T04:44:54.326Z] Building python source
+[debug] [2024-04-26T04:44:54.327Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-04-26T04:44:54.334Z] Running command with virtualenv: command="C:\Users\tiany\Desktop\Work\Dev\UB CLASS\SPRING 2024\Deep learning\code_demo\demo_app\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","-c","\"import firebase_functions; import os; print(os.path.dirname(firebase_functions.__file__))\""]
+[debug] [2024-04-26T04:44:54.493Z] stdout: C:\Users\tiany\Desktop\Work\Dev\UB CLASS\SPRING 2024\Deep learning\code_demo\demo_app\functions\venv\lib\site-packages\firebase_functions
+
+[debug] [2024-04-26T04:44:54.504Z] Running admin server with args: ["python.exe","\"C:\\Users\\tiany\\Desktop\\Work\\Dev\\UB CLASS\\SPRING 2024\\Deep learning\\code_demo\\demo_app\\functions\\venv\\lib\\site-packages\\firebase_functions\\private\\serving.py\""] and env: {"GCLOUD_PROJECT":"celeba-classifier","K_REVISION":"1","PORT":"80","GOOGLE_CLOUD_QUOTA_PROJECT":"celeba-classifier","FUNCTIONS_EMULATOR":"true","TZ":"UTC","FIREBASE_DEBUG_MODE":"true","FIREBASE_DEBUG_FEATURES":"{\"skipTokenVerification\":true,\"enableCors\":true}","FIREBASE_EMULATOR_HUB":"127.0.0.1:4400","CLOUD_EVENTARC_EMULATOR_HOST":"http://127.0.0.1:9299","FIREBASE_CONFIG":"{\"storageBucket\":\"celeba-classifier.appspot.com\",\"projectId\":\"celeba-classifier\"}","GOOGLE_APPLICATION_CREDENTIALS":"C:\\Users\\tiany\\AppData\\Roaming\\firebase\\tianyecf_gmail_com_application_default_credentials.json","ADMIN_PORT":"8081"} in C:\Users\tiany\Desktop\Work\Dev\UB CLASS\SPRING 2024\Deep learning\code_demo\demo_app\functions
+[debug] [2024-04-26T04:44:54.504Z] Running command with virtualenv: command="C:\Users\tiany\Desktop\Work\Dev\UB CLASS\SPRING 2024\Deep learning\code_demo\demo_app\functions\venv\Scripts\activate.bat", args=["","&&","python.exe","\"C:\\Users\\tiany\\Desktop\\Work\\Dev\\UB CLASS\\SPRING 2024\\Deep learning\\code_demo\\demo_app\\functions\\venv\\lib\\site-packages\\firebase_functions\\private\\serving.py\""]
+[info]  * Serving Flask app 'serving'
+ * Debug mode: off
+
+[error] WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:8081
+
+[error] Press CTRL+C to quit
+
+[error] 127.0.0.1 - - [26/Apr/2024 04:44:58] "GET /__/functions.yaml HTTP/1.1" 200 -
+
+[debug] [2024-04-26T04:44:58.033Z] Got response from /__/functions.yaml endpoints:
+  make_preds:
+    availableMemoryMb: null
+    concurrency: null
+    entryPoint: make_preds
+    httpsTrigger: {}
+    ingressSettings: null
+    labels: {}
+    maxInstances: null
+    minInstances: null
+    platform: gcfv2
+    secretEnvironmentVariables: []
+    serviceAccountEmail: null
+    timeoutSeconds: null
+params: []
+requiredAPIs: []
+specVersion: v1alpha1
+
+[error] 127.0.0.1 - - [26/Apr/2024 04:44:58] "GET /__/quitquitquit HTTP/1.1" 200 -
+
+[info] +  functions: Loaded functions definitions from source: make_preds. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: make_preds."}}
+[info] +  functions[us-central1-make_preds]: http function initialized (http://127.0.0.1:5001/celeba-classifier/us-central1/make_preds). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/celeba-classifier/us-central1/make_preds)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Hosting   │ 127.0.0.1:5000 │ n/a                             │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[info] i  hosting: 127.0.0.1 - - [26/Apr/2024:04:45:03 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Apr/2024:04:45:03 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Apr/2024:04:45:04 +0000] "GET /static/css/main.c81ce0ec.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Apr/2024:04:45:04 +0000] \"GET /static/css/main.c81ce0ec.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Apr/2024:04:45:04 +0000] "GET /static/js/main.d070b233.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Apr/2024:04:45:04 +0000] \"GET /static/js/main.d070b233.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Apr/2024:04:45:04 +0000] "GET /manifest.json HTTP/1.1" 200 492 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Apr/2024:04:45:04 +0000] \"GET /manifest.json HTTP/1.1\" 200 492 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Apr/2024:04:45:04 +0000] "GET /favicon.ico HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Apr/2024:04:45:04 +0000] \"GET /favicon.ico HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Apr/2024:04:45:04 +0000] "GET /logo192.png HTTP/1.1" 200 5347 "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Apr/2024:04:45:04 +0000] \"GET /logo192.png HTTP/1.1\" 200 5347 \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[debug] [2024-04-26T04:45:14.823Z] [work-queue] {"queuedWork":["/celeba-classifier/us-central1/make_preds-2024-04-26T04:45:14.823Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-26T04:45:14.824Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/celeba-classifier/us-central1/make_preds-2024-04-26T04:45:14.823Z"],"workRunningCount":1}
+[debug] [2024-04-26T04:45:14.824Z] Accepted request POST /celeba-classifier/us-central1/make_preds --> us-central1-make_preds
+[debug] [2024-04-26T04:45:14.825Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-26T04:45:14.825Z] [functions] Got req.url=/celeba-classifier/us-central1/make_preds, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/celeba-classifier/us-central1/make_preds, mapping to path=/"}}
+[debug] [2024-04-26T04:45:14.833Z] Running command with virtualenv: command="C:\Users\tiany\Desktop\Work\Dev\UB CLASS\SPRING 2024\Deep learning\code_demo\demo_app\functions\venv\Scripts\activate.bat", args=["","&&","functions-framework"]
+[debug] [2024-04-26T04:45:14.844Z] [worker-pool] addWorker(us-central1-make_preds) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-make_preds)"}}
+[debug] [2024-04-26T04:45:14.845Z] [worker-pool] Adding worker with key us-central1-make_preds, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-make_preds, total=1"}}
+[info] i  hosting: 127.0.0.1 - - [26/Apr/2024:04:45:17 +0000] "GET /static/css/main.c81ce0ec.css.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Apr/2024:04:45:17 +0000] \"GET /static/css/main.c81ce0ec.css.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Apr/2024:04:45:17 +0000] "GET /static/js/main.d070b233.js.map HTTP/1.1" 200 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Apr/2024:04:45:17 +0000] \"GET /static/js/main.d070b233.js.map HTTP/1.1\" 200 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] >   * Serving Flask app 'make_preds' {"user":" * Serving Flask app 'make_preds'\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Serving Flask app 'make_preds'\r"}}
+[info] >   * Debug mode: off {"user":" * Debug mode: off\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Debug mode: off\r"}}
+[info] >  WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead. {"user":"WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.\r"}}
+[info] >   * Running on http://127.0.0.1:8928 {"user":" * Running on http://127.0.0.1:8928\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m  * Running on http://127.0.0.1:8928\r"}}
+[info] >  Press CTRL+C to quit {"user":"Press CTRL+C to quit\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m Press CTRL+C to quit\r"}}
+[info] >  127.0.0.1 - - [26/Apr/2024 04:45:19] "GET /__/health HTTP/1.1" 400 - {"user":"127.0.0.1 - - [26/Apr/2024 04:45:19] \"GET /__/health HTTP/1.1\" 400 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [26/Apr/2024 04:45:19] \"GET /__/health HTTP/1.1\" 400 -\r"}}
+[debug] [2024-04-26T04:45:19.191Z] [worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"[worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: IDLE"}}
+[debug] [2024-04-26T04:45:19.192Z] [worker-pool] submitRequest(triggerId=us-central1-make_preds) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-make_preds)"}}
+[info] i  functions: Beginning execution of "us-central1-make_preds" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Beginning execution of \"us-central1-make_preds\""}}
+[debug] [2024-04-26T04:45:19.192Z] [worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"[worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: BUSY"}}
+[info] >  <Response 28 bytes [200 OK]> {"user":"<Response 28 bytes [200 OK]>\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m <Response 28 bytes [200 OK]>\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  127.0.0.1 - - [26/Apr/2024 04:45:19] "POST / HTTP/1.1" 200 - {"user":"127.0.0.1 - - [26/Apr/2024 04:45:19] \"POST / HTTP/1.1\" 200 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [26/Apr/2024 04:45:19] \"POST / HTTP/1.1\" 200 -\r"}}
+[debug] [2024-04-26T04:45:19.269Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-make_preds" in 76.7541ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finished \"us-central1-make_preds\" in 76.7541ms"}}
+[debug] [2024-04-26T04:45:19.269Z] [worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"[worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: IDLE"}}
+[debug] [2024-04-26T04:45:19.270Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-26T04:45:19.270Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-26T04:45:19.270Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-26T04:45:28.530Z] [work-queue] {"queuedWork":["/celeba-classifier/us-central1/make_preds-2024-04-26T04:45:28.530Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-26T04:45:28.530Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/celeba-classifier/us-central1/make_preds-2024-04-26T04:45:28.530Z"],"workRunningCount":1}
+[debug] [2024-04-26T04:45:28.530Z] Accepted request POST /celeba-classifier/us-central1/make_preds --> us-central1-make_preds
+[debug] [2024-04-26T04:45:28.531Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-26T04:45:28.531Z] [functions] Got req.url=/celeba-classifier/us-central1/make_preds, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/celeba-classifier/us-central1/make_preds, mapping to path=/"}}
+[debug] [2024-04-26T04:45:28.531Z] [worker-pool] submitRequest(triggerId=us-central1-make_preds) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-make_preds)"}}
+[info] i  functions: Beginning execution of "us-central1-make_preds" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Beginning execution of \"us-central1-make_preds\""}}
+[debug] [2024-04-26T04:45:28.532Z] [worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"[worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: BUSY"}}
+[info] >  <Response 79 bytes [200 OK]> {"user":"<Response 79 bytes [200 OK]>\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m <Response 79 bytes [200 OK]>\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  127.0.0.1 - - [26/Apr/2024 04:45:28] "POST / HTTP/1.1" 200 - {"user":"127.0.0.1 - - [26/Apr/2024 04:45:28] \"POST / HTTP/1.1\" 200 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [26/Apr/2024 04:45:28] \"POST / HTTP/1.1\" 200 -\r"}}
+[debug] [2024-04-26T04:45:28.615Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-make_preds" in 83.908ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finished \"us-central1-make_preds\" in 83.908ms"}}
+[debug] [2024-04-26T04:45:28.616Z] [worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"[worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: IDLE"}}
+[debug] [2024-04-26T04:45:28.616Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-26T04:45:28.616Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-26T04:45:28.616Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[info] i  hosting: 127.0.0.1 - - [26/Apr/2024:04:46:02 +0000] "GET / HTTP/1.1" 200 644 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Apr/2024:04:46:02 +0000] \"GET / HTTP/1.1\" 200 644 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Apr/2024:04:46:02 +0000] "GET /static/js/main.d070b233.js HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Apr/2024:04:46:02 +0000] \"GET /static/js/main.d070b233.js HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[info] i  hosting: 127.0.0.1 - - [26/Apr/2024:04:46:02 +0000] "GET /static/css/main.c81ce0ec.css HTTP/1.1" 200 - "http://127.0.0.1:5000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [26/Apr/2024:04:46:02 +0000] \"GET /static/css/main.c81ce0ec.css HTTP/1.1\" 200 - \"http://127.0.0.1:5000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0\""}}
+[debug] [2024-04-26T04:46:05.868Z] [work-queue] {"queuedWork":["/celeba-classifier/us-central1/make_preds-2024-04-26T04:46:05.868Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-26T04:46:05.868Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/celeba-classifier/us-central1/make_preds-2024-04-26T04:46:05.868Z"],"workRunningCount":1}
+[debug] [2024-04-26T04:46:05.868Z] Accepted request POST /celeba-classifier/us-central1/make_preds --> us-central1-make_preds
+[debug] [2024-04-26T04:46:05.869Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-26T04:46:05.869Z] [functions] Got req.url=/celeba-classifier/us-central1/make_preds, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/celeba-classifier/us-central1/make_preds, mapping to path=/"}}
+[debug] [2024-04-26T04:46:05.869Z] [worker-pool] submitRequest(triggerId=us-central1-make_preds) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-make_preds)"}}
+[info] i  functions: Beginning execution of "us-central1-make_preds" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Beginning execution of \"us-central1-make_preds\""}}
+[debug] [2024-04-26T04:46:05.869Z] [worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"[worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: BUSY"}}
+[info] >  <Response 40 bytes [200 OK]> {"user":"<Response 40 bytes [200 OK]>\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m <Response 40 bytes [200 OK]>\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  127.0.0.1 - - [26/Apr/2024 04:46:05] "POST / HTTP/1.1" 200 - {"user":"127.0.0.1 - - [26/Apr/2024 04:46:05] \"POST / HTTP/1.1\" 200 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [26/Apr/2024 04:46:05] \"POST / HTTP/1.1\" 200 -\r"}}
+[debug] [2024-04-26T04:46:05.917Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-make_preds" in 47.4038ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finished \"us-central1-make_preds\" in 47.4038ms"}}
+[debug] [2024-04-26T04:46:05.917Z] [worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"[worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: IDLE"}}
+[debug] [2024-04-26T04:46:05.917Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-26T04:46:05.917Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-26T04:46:05.917Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-26T04:46:12.454Z] [work-queue] {"queuedWork":["/celeba-classifier/us-central1/make_preds-2024-04-26T04:46:12.454Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2024-04-26T04:46:12.454Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/celeba-classifier/us-central1/make_preds-2024-04-26T04:46:12.454Z"],"workRunningCount":1}
+[debug] [2024-04-26T04:46:12.454Z] Accepted request POST /celeba-classifier/us-central1/make_preds --> us-central1-make_preds
+[debug] [2024-04-26T04:46:12.454Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2024-04-26T04:46:12.454Z] [functions] Got req.url=/celeba-classifier/us-central1/make_preds, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/celeba-classifier/us-central1/make_preds, mapping to path=/"}}
+[debug] [2024-04-26T04:46:12.454Z] [worker-pool] submitRequest(triggerId=us-central1-make_preds) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-make_preds)"}}
+[info] i  functions: Beginning execution of "us-central1-make_preds" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Beginning execution of \"us-central1-make_preds\""}}
+[debug] [2024-04-26T04:46:12.455Z] [worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"[worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: BUSY"}}
+[info] >  <Response 79 bytes [200 OK]> {"user":"<Response 79 bytes [200 OK]>\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m <Response 79 bytes [200 OK]>\r"}}
+[info] >   {"user":"\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m \r"}}
+[info] >  127.0.0.1 - - [26/Apr/2024 04:46:12] "POST / HTTP/1.1" 200 - {"user":"127.0.0.1 - - [26/Apr/2024 04:46:12] \"POST / HTTP/1.1\" 200 -\r","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"\u001b[90m> \u001b[39m 127.0.0.1 - - [26/Apr/2024 04:46:12] \"POST / HTTP/1.1\" 200 -\r"}}
+[debug] [2024-04-26T04:46:12.540Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-make_preds" in 84.904ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finished \"us-central1-make_preds\" in 84.904ms"}}
+[debug] [2024-04-26T04:46:12.540Z] [worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"[worker-us-central1-make_preds-0cc3f6ec-3bae-4788-be62-45e64ba4520e]: IDLE"}}
+[debug] [2024-04-26T04:46:12.540Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2024-04-26T04:46:12.540Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-make_preds"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2024-04-26T04:46:12.540Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}

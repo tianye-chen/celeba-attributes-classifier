@@ -37,13 +37,20 @@ export const HomePage = () => {
     const image_file = new FormData();
     image_file.append("image_file", file);
 
-    fetch("https://celeba-classifier.web.app/make_preds", {
-      method: "POST",
-      body: image_file,
-    })
-      .then((res) => res.text())
+    fetch(
+      "https://us-central1-celeba-classifier.cloudfunctions.net/make_preds",
+      {
+        method: "POST",
+        body: image_file,
+      },
+    )
+      .then((res) => {
+        if (res.ok) {
+          console.log(res);
+          return res.json();
+        }
+      })
       .then((data) => {
-        data = JSON.parse(data);
         setResults(data);
       })
       .catch((err) => {
