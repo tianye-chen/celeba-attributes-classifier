@@ -46,7 +46,6 @@ export const HomePage = () => {
     )
       .then((res) => {
         if (res.ok) {
-          console.log(res);
           return res.json();
         }
       })
@@ -100,7 +99,7 @@ export const HomePage = () => {
       </div>
 
       <div class={`${debug ? "border-2" : ""} row-span-1 self-end`}>
-        <h1 class="pb-6 text-6xl font-bold text-white">Results v1</h1>
+        <h1 class="pb-6 text-6xl font-bold text-white">Results</h1>
       </div>
 
       <div class={`${debug ? "border-2" : ""} row-span-2 ml-6`}>

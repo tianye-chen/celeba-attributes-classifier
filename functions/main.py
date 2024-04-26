@@ -1,6 +1,5 @@
 from firebase_functions import https_fn, options
 from flask import jsonify
-from flask_cors import CORS
 import torch
 from torch import nn
 from PIL import Image
