@@ -34,6 +34,8 @@ export const HomePage = () => {
       return;
     }
 
+    setResults(["Fetching..."]);
+
     const image_file = new FormData();
     image_file.append("image_file", file);
 
@@ -53,6 +55,7 @@ export const HomePage = () => {
         setResults(data);
       })
       .catch((err) => {
+        setResults(["Error during fetch"]);
         console.error(err);
       });
   };
